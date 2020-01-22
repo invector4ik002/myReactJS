@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 
 export default class Button extends Component {
     
-// onClick={}
+    sendMess =()=> {
+        console.log('work');
+    };
 
     render() {
         return (
             <div>
-                <button type="button" >go</button>
+                <input 
+                type={this.props.type} 
+                onClick={this.sendMess}
+                value={this.props.buttonValue}
+                >
+                </input>
             </div>
         );
     }

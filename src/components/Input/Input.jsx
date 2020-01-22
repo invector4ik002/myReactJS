@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
 
-import Button from '../Button/Button.jsx'
-
 export default class Input extends Component {
 
+    getValue =(event)=> {
+        console.log(event.target.value);
+    };
+    
+    
     render() {
+        const {type, placeholder, buttonValue} = this.props;
         return (
-            <div className="wrapper-appPosts">
-            
-                <input type="text" placeholder="users name" id="users"></input>
-                <input type="text" placeholder="message" id="message"></input>
-                <Button/> 
-                
-            </div>
+            <div>
+                <input 
+                    onChange={this.getValue}                   
+                    type={type} 
+                    placeholder={placeholder}
+                    // value={buttonValue} 
+                    // onClick={this.sendMess}                
+                >
+                </input> 
+            </div>    
         );
     }
 }
