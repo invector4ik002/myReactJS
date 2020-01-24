@@ -2,7 +2,7 @@ import '../../style.css'
 
 import React, { Component } from 'react';
 
-import Form from '../Form/Form.jsx'
+// import Form from '../Form/Form.jsx'
 export default class MessageList extends Component {
     // constructor(props) {
     //     super(props);
@@ -16,7 +16,7 @@ export default class MessageList extends Component {
         return (
             <div>
                 <div className="messageList">
-                    <Form/>
+                    {/* <Form/> */}
                 </div>
             </div>
         );
